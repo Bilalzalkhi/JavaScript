@@ -15,6 +15,28 @@ if (trafficLight.state === "green"){ trafficLight.state = "orange"};
 else if(trafficLight.state === "orange"){trafficLight.state = "red"};
 else if(trafficLight.state === "red"){trafficLight.state = "green"};  
 rotations++;  
+
+  second method:
+  switch (currentState) {
+  case "greeen":
+    trafficlight.state =  "orange";
+    break;
+}
+    switch (currentState) {
+  case "orange":
+    trafficlight.state =  "red";
+    break;
+    }
+    switch (currentState) {
+  case "red":
+    trafficlight.state =  "green";
+    rotations++;
+    break;
+
+  default:
+    break;
+
+        
   // TODO
   // if the color is green, turn it orange
   // if the color is orange, turn it red
