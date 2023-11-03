@@ -1,4 +1,4 @@
-you can finf the solutions in the follow links:
+you can find the solutions in the follow links:
 
 1-[traffic-light-1.js](traffic-light-1.js)
 
