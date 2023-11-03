@@ -15,7 +15,8 @@ while (cycle < 2) {
   console.log("The traffic light is on", currentState);
   if(currentState === "green"){trafficLight.stateIndex = 1};
   else if (currentState === "orange"){trafficLight.stateIndex = 2};
-  else (currentState === "red"){trafficLight.stateIndex = 2 && cycle++};
+  else (currentState === "red"){trafficLight.stateIndex = 0};
+  cycle++;                             
     
    
   }
