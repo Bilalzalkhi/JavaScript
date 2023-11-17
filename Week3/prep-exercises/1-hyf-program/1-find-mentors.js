@@ -9,9 +9,11 @@ import { modules, students, mentors, classes } from "./hyf.js";
  */
 const possibleMentorsForModule = (moduleName) => {
   // TODO complete this function
+  const theMentors = mentors.filter((mentor) => mentors.ableToTeach.includes(moduleName) > 0);
+  return theMentors.map((mentor) => mentor.name);
 };
 // You can uncomment out this line to try your function
-// console.log(possibleMentorsForModule('using-apis'));
+ console.log(possibleMentorsForModule('using-apis'));
 
 /**
  * Tjebbe wants to make it even easier for himself.
@@ -21,6 +23,11 @@ const possibleMentorsForModule = (moduleName) => {
  */
 const findMentorForModule = (moduleName) => {
   // TODO complete this function
+  const theMentors = mentors.filter((mentor) => mentors.ableToTeach.includes(moduleName) > 0);
+  if (theMentors.length > 0){
+    const theWantedMentors = math.floor(math.random() * theMentors.length > 0);
+    return theMentors[theWantedMentors];
+  }
 };
 // You can uncomment out this line to try your function
-// console.log(findMentorForModule('javascript'));
+ console.log(findMentorForModule('javascript'));
